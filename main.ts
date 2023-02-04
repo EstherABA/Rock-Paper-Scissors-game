@@ -85,7 +85,7 @@ const designComputerDivElement = (computerChoice:ICard) =>{
         computerChoiceDiv?.innerHTML = imgForCard.rock;
         computerChoiceDiv?.className = "card-button rock-button";
     }
-}
+};
 designComputerDivElement(computerChoice);
 
 
@@ -111,13 +111,15 @@ const WhoWin = (playerGuess:ICard, computerGuess:ICard):ICard => {
     
         },5000);
 
-    };
+};
 
 WhoWin(userChoice,computerChoice);
 
 const playAgainBtn = () => {
     const mainDiv = document.getElementById('main',) as HTMLDivElement | null;
     mainDiv.style.display = "block";
+    const mainPicked = document.getElementById('main-picked',) as HTMLDivElement | null;
+    mainPicked.style.display = "none";
 }
 
 const rulesView = () => {

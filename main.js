@@ -99,6 +99,8 @@ WhoWin(userChoice, computerChoice);
 var playAgainBtn = function () {
     var mainDiv = document.getElementById('main');
     mainDiv.style.display = "block";
+    var mainPicked = document.getElementById('main-picked');
+    mainPicked.style.display = "none";
 };
 var rulesView = function () {
     var rulesImg = document.getElementById('img-rules');
