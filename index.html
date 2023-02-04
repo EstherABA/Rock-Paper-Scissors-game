@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esther | Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!-- ########################## HEADER ############################ -->
+<header> 
+    <div class="logo-div">
+        <img id="logo-img" src="./images/logo.svg">
+    </div>
+    <div class="score">
+        <div> SCORE</div>
+        <div id="points" class="points">0</div>
+    </div>
+</header>
+
+<!-- ######################### CARD TO PICK ######################## -->
+<div class="main" id="main">
+    <img src="./images/bg-triangle.svg" class="triangle-img">
+    <div class="card" id="paper">
+        <button id="paper" class="card-button paper-button" onclick="handleUserChoice(this.id)"><img src="./images/icon-paper.svg"></button>
+    </div>
+    <div class="card" id="scissors">
+        <button id="scissors" class="card-button scissors-button" onclick="handleUserChoice(this.id)"><img src="./images/icon-scissors.svg"></button>
+    </div>
+    <div class="card" id="rock">
+        <button id="rock" class="card-button rock-button" onclick="handleUserChoice(this.id)"><img src="./images/icon-rock.svg"></button>
+    </div>
+</div>
+
+<!-- ######################### CARD IS PICKED ######################### -->
+<div class="main-picked" id="main-picked"> 
+    
+    <div class="user-guess-div">
+        <span class="choice-title">YOU PICKED</span>
+        <div id="user-choice-photo"></div>
+    </div>
+
+    <div id="all-text" class="all-text">
+        <div id="result" class="result"></div>
+        <button id="playAgainBtn" class="play-again-btn" onclick="playAgainBtn()">PLAY AGAIN </button>
+    </div>
+
+    <div class="computer-choice">
+        <span class="choice-title">THE HOUSE PICKED</span>
+        <div class="none-pick-yet" id="none-pick-yet"></div>
+        <div class="is-picked" id="is-picked"></div>
+    </div>
+
+</div>
+
+
+<!-- ########################### RULES ########################### -->
+<div id="rules" class="rules-div">
+    <button class="rules" onclick="rulesView()">RULES</button>
+    <div id="img-rules" class="rules-img"></div>
+</div>
+
+<script src="./main.js"></script>
+</body>
+</html>

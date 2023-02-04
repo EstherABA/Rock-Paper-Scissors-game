@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: rgb(255, 255, 255);; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(#1F3756, #141539);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+header{
+    display: flex;
+    gap: 55%;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    left: 50%;
+    width: 50%;
+    height: 20%;
+    transform: translate(-50%,-50%);
+    border: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(122, 122, 122);
+}
+img{
+    width: 50%;
+     /* margin-left: 35px; */
+    /* margin-top: 30px;  */
+    
+}
+.logo-div{
+    margin: 20px 20px 0px 20px;
+}
+#logo-img{
+    width: 100%;
+    height: 90%;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 10px 10px;
+    background-color: rgb(237, 246, 255);
+    border-radius: 10px;
+    width: 20%;
+    height: 80%;
+    font-weight: 700;
+    font-size:20px ;
+    color: rgb(66, 82, 255);
+    letter-spacing: 0.1em;
+}
+.points{
+    font-weight:900;
+    font-size:60px ;
+    color: #5e5f72;
+}
+.main{
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 70%;
+    gap: 20px;
+}
+.triangle-img{
+    z-index: 0;
+    width: 37%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    right: 0;
+}
+
+/* ####### design the buttons ####### */
+.card{
+    z-index: 1;
+}
+.card-button{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 20px;
+    border-style: solid;
+}
+button:hover{
+    cursor: pointer;
+}
+.paper-button{
+    border-color: rgb(83, 115, 255);
+    background-color: white;
+}
+.scissors-button{
+    border-color: orange;
+    background-color: white;
+}
+.rock-button{
+    border-color: rgb(245, 48, 113);
+    background-color: white;
+}
+#paper{
+    position: absolute;
+    top:34%;
+    left:23%;
+}
+#scissors{
+    position: absolute;
+    top: 34%;
+    left: 57%;
+}
+#rock{
+    position: absolute;
+    top:80%;
+    left: 40%;
+}
+
+/* ####### design the screen after choice ####### */
+
+.main-picked{
+    display: none;
+    flex-direction: row;
+    gap:200px;
+    position: relative;
+    top:70%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 60%;
+    
+}
+.user-guess-div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.choice-title{
+    font-weight: 700;
+    font-size:20px ;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.1em;
+}
+#user-choice-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.paper{
+    background-color: white;
+    border-color: rgb(83, 115, 255);
+    /* margin-left: 30px; */
+}
+.computer-choise{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.all-text{
+    display: none;
+    flex-direction: column;
+
+    
+}
+.result{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */ 
+    width: 100%;
+    height: 20%;
+    color: white;
+
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.play-again-btn{
+    /* display: none; */
+    width: 100%;
+    height: 10%;
+    font-weight: 700;
+    font-size:20px ;
+    color: rgb(190, 51, 218);
+    letter-spacing: 0.1em;
+
+}
+#none-pick-yet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 100px;
+    border-style: solid;
+    border-color: #141539;
+}
+#is-picked{
+    display: none;
+    flex-direction: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 35px;
+}
+
+.rules-div{
+    width: 30%;
+    height: 50%;
+}
+.rules{
+    width: 8%;
+    height: 5%;
+    position: absolute;
+    bottom: 5%;
+    left:90%; 
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    letter-spacing: 0.1em;
+}
+.rules-img{
+    z-index: 2;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
